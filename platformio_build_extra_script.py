@@ -9,6 +9,6 @@ env.AddPostAction(
                 "$OBJCOPY",
                 "-O",
                 "binary",
-                "$TARGET",
-                "$BUILD_DIR/${PROGNAME}.bin"
-            ]), "Building $TARGET"))
+                "\"$TARGET\"",
+                "\"$BUILD_DIR/${PROGNAME}.bin\""
+            ]), "Building $OBJCOPY -O binary \"$TARGET\" \"$BUILD_DIR/${PROGNAME}.bin\""))
